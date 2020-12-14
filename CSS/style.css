@@ -52,4 +52,8 @@
     background-color: #6699FF;
 }
 
+.tower__disc--opacity{
+    opacity: 0.8;
+    border: 1px solid gold;
+}
 
