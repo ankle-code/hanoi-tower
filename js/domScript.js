@@ -15,6 +15,5 @@ for(let i = 0; i < 4; i++){
 
     let tower_rod = document.getElementById('rod0');
     tower_rod.appendChild(tower_disc);
-
 }
 

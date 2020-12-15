@@ -1,8 +1,13 @@
 // mover o discos
 
-    const rod = document.querySelectorAll('.tower__rod');
-    const disc = document.querySelectorAll('.tower__disc');
+    let rod = document.querySelectorAll('.tower__rod');
+    let disc = document.querySelectorAll('.tower__disc');
 
+    // let teste = disc.pop();
+
+    console.log(disc);
+
+/*
 teste();
 
 function teste() {
@@ -25,6 +30,6 @@ function destiny(disc){
         });
     } 
     
-};
+};*/
 
 
