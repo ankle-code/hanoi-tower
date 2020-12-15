@@ -2,52 +2,52 @@
 
     const rod = document.querySelectorAll('.tower__rod');
     const disc = document.querySelectorAll('.tower__disc');
+    const firstDisc = disc[disc.length - 1];
+    console.log(firstDisc);
+    const tower = document.getElementById('tower');
 
-    originRod();
+    tower.addEventListener('click', function(e){
+       let selectedDisc = document.getElementById(e.target.id);
+       console.log(selectedDisc);
 
-function originRod() {
+       tower.addEventListener('click', function(e){
+           let selectedRod = document.getElementById(e.target.id);
+
+           selectedRod.appendChild(selectedDisc);
+           return;
+
+       });
+       return
+
+    });
+
     
-        rod[0].addEventListener('click',function(){
-        const firstDisc = rod[0].lastElementChild;
-        firstDisc.classList.add('tower__disc--opacity');
-        console.log(firstDisc);
-        destiny(firstDisc);
-        });
 
-        rod[1].addEventListener('click',function(){
-        const firstDisc = rod[1].lastElementChild;
-        firstDisc.classList.add('tower__disc--opacity');
-        console.log(firstDisc);
-        destiny(firstDisc);
-        });
 
-        rod[2].addEventListener('click',function(){
-        const firstDisc = rod[2].lastElementChild;
-        firstDisc.classList.add('tower__disc--opacity');
-        console.log(firstDisc);
-        destiny(firstDisc);
-        });
-        
+
+
+
+/*moveFirstDisc();
+
+function originRod(){
+
 };
 
-function destiny(disc){            
-    
-    rod[0].addEventListener('click',function(){
-        disc.classList.remove('tower__disc--opacity');
-        rod[0].appendChild(disc);
-        originRod();
+function moveFirstDisc() {
+    firstDisc.addEventListener('click',function(){
+        firstDisc.classList.add('tower__disc--opacity');
+        destinyRod(firstDisc);
     });
-
-    rod[1].addEventListener('click',function(){
-        disc.classList.remove('tower__disc--opacity');
-        rod[1].appendChild(disc);
-        originRod();
-    });
-
-    rod[2].addEventListener('click',function(){
-        disc.classList.remove('tower__disc--opacity');
-        rod[2].appendChild(disc);
-        originRod();
-    });
-
 };
+
+function destinyRod(disc) {
+    for(let i = 0; i < 3; i++){
+        rod[i].addEventListener('click',function(e){
+            e.target.;
+        });
+    };
+}*/
+
+
+
+
