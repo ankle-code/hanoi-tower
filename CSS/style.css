@@ -12,18 +12,25 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    width: 100%;
-    height: 30vh;
+    width: 98.6%;
+    height: 50vh;
 }
 
 .tower__title{
     color: #ffa751;
+    font-size: 1.1rem;
 }
 
 .tower__column {
     width: 30%;
     text-align: center;
     height: 85%;
+}
+
+.tower__text {
+    font-size: 0.7rem;
+    margin: 0;
+    margin-top: 6px;
 }
 
 .tower__rod {
@@ -35,6 +42,7 @@ body{
     background-image: url('../image/rod.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 166%;
 }
 
 .tower__disc {
@@ -45,25 +53,25 @@ body{
 }
 
 #disc1 {
-    width: 50%;
+    width: 75%;
     max-width: 100px;
     background: linear-gradient(to bottom, #ff512f, #dd2476);
 }
 
 #disc2 {
-    width: 40%;
+    width: 60%;
     max-width: 80px;
     background: linear-gradient(to bottom, #00ffc8, #08dd1e);
 }
 
 #disc3 {
-    width: 30%;
+    width: 40%;
     max-width: 60px;
     background: linear-gradient(to bottom, #4776e6, #8e54e9);
 }
 
 #disc4 {
-    width: 20%;
+    width: 30%;
     max-width: 40px;
     background: linear-gradient(to right, #b2fefa, #0ed2f7);
 }
@@ -84,16 +92,17 @@ body{
 }
 
 .painel__button{
-    padding: 10px 15px;
+    padding: 3px 7px;
     border: 0;
-    box-shadow: 0px 12px 19px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 12px 19px -3px rgba(50, 50, 50, 0.75);
     outline: 0;
     background: linear-gradient(to bottom, #ffe259, #ffa751);
     color: #000;
 }
 
 .painel__text{
-    margin-top: 30px;
+    margin-top: 20px;
+    font-size: 0.8rem;
 }
 
 .painel__count{
@@ -102,9 +111,63 @@ body{
 }
 
 .painel__text--result{
-    font-size: 1.75rem;
+    font-size: 0.85rem;
     font-weight: bold;
     letter-spacing: 2px;
+    margin: 0;
 }
 
 
+@media only screen and (min-width: 768px) {
+
+    .tower {
+        width: 99.7%;
+        height: 30vh;
+    }
+
+    .tower__title{
+        color: #ffa751;
+        font-size: 2rem;
+    }
+
+    .tower__text {
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .tower__rod {
+        background-size: 63%;
+    }
+
+    #disc1 {
+
+        width: 50%;
+    }
+    
+    #disc2 {
+
+        width: 40%;
+    }
+    
+    #disc3 {
+
+        width: 30%;
+    }
+    
+    #disc4 {
+
+        width: 20%;
+    }
+
+    .painel__button{
+        padding: 10px 15px;
+        box-shadow: 0px 12px 19px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    .painel__text{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+
+}
