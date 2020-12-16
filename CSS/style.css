@@ -1,11 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
 .tower {
-    border: 2px solid black;
+    border: 2px solid #ffe259;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     width: 100%;
     height: 30vh;
+}
+
+.tower__title{
+    color: #ffa751;
 }
 
 .tower__column {
@@ -20,14 +32,14 @@
     align-items: center;
     width: 100%;
     height: 85%;
-    background-image: url('/image/rod.jpg');
+    background-image: url('../image/rod.jpg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .tower__disc {
     height: 15%;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     max-height: 32px;
 }
@@ -35,25 +47,25 @@
 #disc1 {
     width: 50%;
     max-width: 100px;
-    background-color: #FF3333;
+    background: linear-gradient(to bottom, #ff512f, #dd2476);
 }
 
 #disc2 {
     width: 40%;
     max-width: 80px;
-    background-color: #00E600;
+    background: linear-gradient(to bottom, #00ffc8, #08dd1e);
 }
 
 #disc3 {
     width: 30%;
     max-width: 60px;
-    background-color: #8C19FF;
+    background: linear-gradient(to bottom, #4776e6, #8e54e9);
 }
 
 #disc4 {
     width: 20%;
     max-width: 40px;
-    background-color: #6699FF;
+    background: linear-gradient(to right, #b2fefa, #0ed2f7);
 }
 
 .tower__disc--opacity{
@@ -66,4 +78,33 @@
     top: 0;
     left: 0;
 }
+
+.painel{
+    margin: 20px auto;
+}
+
+.painel__button{
+    padding: 10px 15px;
+    border: 0;
+    box-shadow: 0px 12px 19px 0px rgba(50, 50, 50, 0.75);
+    outline: 0;
+    background: linear-gradient(to bottom, #ffe259, #ffa751);
+    color: #000;
+}
+
+.painel__text{
+    margin-top: 30px;
+}
+
+.painel__count{
+    font-weight: bold;
+    color: #ffa751;
+}
+
+.painel__text--result{
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 
