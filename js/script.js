@@ -1,9 +1,5 @@
 // mover o discos
 
-//reset btn
-//span mensagem de vitoria
-
-
     const tower = document.getElementById('tower');
     const rodEnd = document.getElementById('rod3');
     let drag = null;
