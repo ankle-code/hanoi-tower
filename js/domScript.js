@@ -39,14 +39,5 @@ for(let i = 0; i < 4; i++) {
     rod1.appendChild(disc);
 }
 
-// for(let i = 0; i < 4; i++){
-//     let disc = document.createElement('div');
-//     disc.setAttribute('id', 'disc' + i);
-//     disc.setAttribute('class', 'tower__disc');
-
-//     let tower_rod = document.getElementById('rod0');
-//     tower_rod.appendChild(disc);
-// }
-
 
 
