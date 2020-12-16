@@ -1,6 +1,5 @@
 // mover o discos
 
-
     const tower = document.getElementById('tower');
     let drag = null;
 
