@@ -1,7 +1,7 @@
 // mover o discos
 
     const tower = document.getElementById('tower');
-    const rodEnd = document.getElementById('rodEnd');
+    const rodEnd = document.getElementById('rod3');
     let drag = null;
     let count = 1;
     let countMoviment = 0;
