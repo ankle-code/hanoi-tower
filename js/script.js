@@ -1,5 +1,3 @@
-// mover o discos
-
     render();
 
     const tower = document.getElementById('tower');
@@ -26,10 +24,9 @@
         
         if(el.classList[0] === 'tower__disc' && el === originParentEl.lastElementChild && count === 1){
             drag = document.getElementById(el.id);
-            dragType = e.target.classList[0];
-            el.classList.add('tower__disc--opacity')
+            el.classList.add('tower__disc--opacity');
             mouseMoviment = true;
-            tower.addEventListener('mousemove',mouseMove)
+            tower.addEventListener('mousemove',mouseMove);
             count++;
         }
         
@@ -44,18 +41,18 @@
             if(destinyParentEl.lastElementChild === null){
                 countMoviment++;
                 drop.appendChild(drag);
-                drag.classList.remove('tower__disc--opacity')
+                drag.classList.remove('tower__disc--opacity');
                 countMessage.innerText = countMoviment;
             }
             
             else if(destinyParentEl.lastElementChild != null && drag.clientWidth < destinyChildEl.clientWidth){
                 countMoviment++;
                 drop.appendChild(drag);
-                drag.classList.remove('tower__disc--opacity')
+                drag.classList.remove('tower__disc--opacity');
                 countMessage.innerText = countMoviment;
             }else{
-                message.innerText = "Invalid moviment! :^("
-                drag.classList.remove('tower__disc--opacity')
+                message.innerText = "Invalid moviment! :^(";
+                drag.classList.remove('tower__disc--opacity');
                 drag = null;
             }
             count = 1;
@@ -67,7 +64,6 @@
             message.innerText = "Congratulations you finish the tower! :^)";
         }
 
-        console.log(countMoviment)
     });
 
     restartBtn.addEventListener('click',function(){
@@ -90,7 +86,6 @@ function restart() {
     for(let i = 0; i < rods.length; i++){
         rods[i].innerHTML = "";
     }
-    console.log(rodEnd.childElementCount);
 
     for(let i = 1; i <= 4; i++) {
         let disc = document.createElement('div');
